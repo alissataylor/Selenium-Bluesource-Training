@@ -7,10 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import common.BaseClass;
 import common.LoginPageObject;
 import common.TitlePageObject;
 
-public class Title {
+public class Title extends BaseClass {
 	WebDriver driver;
 
 	@Test
@@ -148,7 +150,7 @@ public class Title {
 			title.deleteTitle(empFile.getString("newTitleName"));
 			
 			//accepts the java script pop up to delete the department.
-			title.javaScriptPopUp();
+			javaScriptPopUp();
 			
 			//verify that the department deleted message appears at the top of the page.
 			Assert.assertTrue(title.deleteTitleSuccessMessage(),
@@ -160,7 +162,6 @@ public class Title {
 					"The updated title was listed in the titles list, please investigate.");
 			Reporter.log("The title was not listed on the page, it was successfully deleted.");
 			
-			driver.close();
 		}
 	}
 	

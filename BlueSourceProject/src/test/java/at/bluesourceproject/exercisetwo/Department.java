@@ -7,10 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import common.BaseClass;
 import common.DepartmentPageObject;
 import common.LoginPageObject;
 
-public class Department {
+public class Department extends BaseClass {
 	WebDriver driver;
 
 	@Test
@@ -146,7 +148,7 @@ public class Department {
 		departments.deleteDepartment(empFile.getString("newDepartmentName"));
 		
 		//accepts the java script pop up to delete the department.
-		departments.javaScriptPopUp();
+		javaScriptPopUp();
 		
 		//verify that the department deleted message appears at the top of the page.
 		Assert.assertTrue(departments.deleteDepartmentSuccessMessage(),
@@ -158,6 +160,5 @@ public class Department {
 				"The updated department was listed in the departments list, please investigate.");
 		Reporter.log("The department was not listed on the page, it was successfully deleted.");
 		
-		driver.close();
 	}
 }

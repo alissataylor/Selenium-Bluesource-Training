@@ -287,10 +287,6 @@ public class TitlePageObject {
 		}
 	}
 
-	public void javaScriptPopUp() {
-		driver.switchTo().alert().accept();
-	}
-
 	// checks for the title deleted success message.
 	public boolean deleteTitleSuccessMessage() {
 		if (titleDeleted.isDisplayed()) {

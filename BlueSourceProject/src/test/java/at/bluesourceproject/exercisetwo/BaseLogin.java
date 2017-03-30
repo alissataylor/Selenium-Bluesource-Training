@@ -47,8 +47,6 @@ public class BaseLogin {
 		Assert.assertTrue(homepage.confirmGeneralInfo(), "The 'General Information' pane is not visible, please investigate.");
 		Reporter.log("The 'General Information' pane is visible, user is able to verify all general information.<br>");
 
-		// quit the driver.
-		driver.quit();
 	}
 
 }

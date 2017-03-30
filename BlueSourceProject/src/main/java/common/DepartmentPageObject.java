@@ -278,7 +278,5 @@ public class DepartmentPageObject {
 
 	}
 	
-	public void javaScriptPopUp() {
-		driver.switchTo().alert().accept();
-	}
 }
+

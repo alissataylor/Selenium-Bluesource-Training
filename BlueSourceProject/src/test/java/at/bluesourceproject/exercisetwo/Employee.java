@@ -58,7 +58,6 @@ public class Employee {
 				"The new employee is not displayed in the employee's table");
 		Reporter.log("The employee was not found in the employee table.");
 
-		driver.quit();
 	}
 
 	@Test(dependsOnMethods = "createEmployee")
@@ -98,8 +97,6 @@ public class Employee {
 				verifyEmployee.empListedInMgrTable(empFile.getString("firstName"), empFile.getString("lastName")),
 				"The new employee is not displayed in the managers table");
 		Reporter.log("The employee was found in the managers table.");
-
-		driver.quit();
 
 	}
 }
