@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import common.EmployeesPageObject;
@@ -13,6 +15,7 @@ import common.LoginPageObject;
 
 public class Employee {
 	WebDriver driver;
+	
 
 	@Test
 	public void createEmployee() {
@@ -57,6 +60,8 @@ public class Employee {
 				empFile.getString("firstName"), empFile.getString("lastName")),
 				"The new employee is not displayed in the employee's table");
 		Reporter.log("The employee was not found in the employee table.");
+		
+		driver.quit();
 
 	}
 
@@ -97,6 +102,7 @@ public class Employee {
 				verifyEmployee.empListedInMgrTable(empFile.getString("firstName"), empFile.getString("lastName")),
 				"The new employee is not displayed in the managers table");
 		Reporter.log("The employee was found in the managers table.");
-
+		
+		driver.quit();
 	}
 }

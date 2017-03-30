@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="at.bluesourceproject.exercisetwo.Title">
+      <class name="at.bluesourceproject.exercisetwo.Employee">
         <methods>
-          <include name="addTitle"/>
-          <include name="failUpdateTitle"/>
-          <include name="deleteTitle"/>
-          <include name="updateTitle"/>
-          <include name="failAddTitle"/>
+          <include name="tearDown"/>
+          <include name="employeeReportsToMgr"/>
+          <include name="createEmployee"/>
         </methods>
-      </class> <!-- at.bluesourceproject.exercisetwo.Title -->
+      </class> <!-- at.bluesourceproject.exercisetwo.Employee -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

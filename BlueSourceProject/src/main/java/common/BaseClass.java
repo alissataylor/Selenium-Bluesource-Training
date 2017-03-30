@@ -1,7 +1,7 @@
 package common;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
+
 
 public class BaseClass {
 
@@ -12,8 +12,8 @@ public class BaseClass {
 		driver.switchTo().alert().accept();
 	}
 
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-	}
+	//@AfterClass
+	//public void tearDown() {
+		//driver.quit();
+	//}
 }

@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-
 import common.HomepagePageObject;
 import common.LoginPageObject;
 
@@ -46,6 +45,8 @@ public class BaseLogin {
 		// verify that the general information pane is visible.
 		Assert.assertTrue(homepage.confirmGeneralInfo(), "The 'General Information' pane is not visible, please investigate.");
 		Reporter.log("The 'General Information' pane is visible, user is able to verify all general information.<br>");
+		
+		driver.quit();
 
 	}
 

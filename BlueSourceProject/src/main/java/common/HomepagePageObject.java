@@ -28,8 +28,8 @@ public class HomepagePageObject {
 	// Variable Declaration
 	// ------------------------------
 
-	@FindBy(xpath = "//*[@id='resource-content']/div[1]/table")
-	private WebElement tblEmployees;
+	@FindBy(id = "help-btn")
+	private WebElement btnHelp;
 
 	@FindBy(xpath = "//*[@id='accordion']/div/div[7]/h4")
 	private WebElement lblGeneralInfo;
@@ -47,8 +47,8 @@ public class HomepagePageObject {
 	// Checks to see if the employee page is displayed.
 	public boolean employeePageDisplays() {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOf(tblEmployees));
-		if (tblEmployees.isDisplayed()) {
+		wait.until(ExpectedConditions.visibilityOf(btnHelp));
+		if (btnHelp.isDisplayed()) {
 			return true;
 		} else {
 			return false;
