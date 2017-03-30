@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[The user successfully navigated to the departments page.]]>
+    </line>
+    <line>
+      <![CDATA[The error message was displayed, new title not created.]]>
+    </line>
+    <line>
+      <![CDATA[The success message was displayed, new title was created.]]>
+    </line>
+    <line>
+      <![CDATA[The title was listed on the page.]]>
+    </line>
+    <line>
+      <![CDATA[The user navigated to the 'edit title' page.]]>
+    </line>
+    <line>
+      <![CDATA[The error message was displayed, title not updated.]]>
+    </line>
+    <line>
+      <![CDATA[The success message was displayed, title updated.]]>
+    </line>
+    <line>
+      <![CDATA[The title was updated and listed on the page.]]>
+    </line>
+    <line>
+      <![CDATA[The success message was displayed, title was deleted.]]>
+    </line>
+    <line>
+      <![CDATA[The title was not listed on the page, it was successfully deleted.]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22448" started-at="2017-03-29T15:38:55Z" finished-at="2017-03-29T15:39:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22448" started-at="2017-03-29T15:38:55Z" finished-at="2017-03-29T15:39:17Z">
+      <class name="at.bluesourceproject.exercisetwo.Title">
+        <test-method status="PASS" signature="failAddTitle()[pri:0, instance:at.bluesourceproject.exercisetwo.Title@2a5ca609]" name="failAddTitle" duration-ms="9864" started-at="2017-03-29T11:38:55Z" finished-at="2017-03-29T11:39:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The user successfully navigated to the departments page.]]>
+            </line>
+            <line>
+              <![CDATA[The error message was displayed, new title not created.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- failAddTitle -->
+        <test-method status="PASS" signature="addTitle()[pri:0, instance:at.bluesourceproject.exercisetwo.Title@2a5ca609]" name="addTitle" duration-ms="1626" started-at="2017-03-29T11:39:05Z" depends-on-methods="at.bluesourceproject.exercisetwo.Title.failAddTitle" finished-at="2017-03-29T11:39:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The success message was displayed, new title was created.]]>
+            </line>
+            <line>
+              <![CDATA[The title was listed on the page.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addTitle -->
+        <test-method status="PASS" signature="failUpdateTitle()[pri:0, instance:at.bluesourceproject.exercisetwo.Title@2a5ca609]" name="failUpdateTitle" duration-ms="1777" started-at="2017-03-29T11:39:06Z" depends-on-methods="at.bluesourceproject.exercisetwo.Title.addTitle, at.bluesourceproject.exercisetwo.Title.failAddTitle" finished-at="2017-03-29T11:39:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The user navigated to the 'edit title' page.]]>
+            </line>
+            <line>
+              <![CDATA[The error message was displayed, title not updated.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- failUpdateTitle -->
+        <test-method status="PASS" signature="updateTitle()[pri:0, instance:at.bluesourceproject.exercisetwo.Title@2a5ca609]" name="updateTitle" duration-ms="2513" started-at="2017-03-29T11:39:08Z" depends-on-methods="at.bluesourceproject.exercisetwo.Title.addTitle, at.bluesourceproject.exercisetwo.Title.failUpdateTitle, at.bluesourceproject.exercisetwo.Title.failAddTitle" finished-at="2017-03-29T11:39:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The success message was displayed, title updated.]]>
+            </line>
+            <line>
+              <![CDATA[The title was updated and listed on the page.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateTitle -->
+        <test-method status="PASS" signature="deleteTitle()[pri:0, instance:at.bluesourceproject.exercisetwo.Title@2a5ca609]" name="deleteTitle" duration-ms="6652" started-at="2017-03-29T11:39:11Z" depends-on-methods="at.bluesourceproject.exercisetwo.Title.addTitle, at.bluesourceproject.exercisetwo.Title.failUpdateTitle, at.bluesourceproject.exercisetwo.Title.failAddTitle, at.bluesourceproject.exercisetwo.Title.updateTitle" finished-at="2017-03-29T11:39:17Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The success message was displayed, title was deleted.]]>
+            </line>
+            <line>
+              <![CDATA[The title was not listed on the page, it was successfully deleted.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteTitle -->
+      </class> <!-- at.bluesourceproject.exercisetwo.Title -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
