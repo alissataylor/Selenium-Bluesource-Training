@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Bluesource]">
+  <test name="demo(failed)">
+    <classes>
+      <class name="at.bluesourceproject.exercisetwo.Department">
+        <methods>
+          <include name="deleteDepartment"/>
+          <include name="failAddDepartments"/>
+          <include name="createDepartment"/>
+          <include name="failUpdateDept"/>
+          <include name="updateDepartment"/>
+        </methods>
+      </class> <!-- at.bluesourceproject.exercisetwo.Department -->
+    </classes>
+  </test> <!-- demo(failed) -->
+</suite> <!-- Failed suite [Bluesource] -->

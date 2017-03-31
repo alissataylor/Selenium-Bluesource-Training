@@ -1,51 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
     <line>
-      <![CDATA[The 'add employee' form is displayed.]]>
+      <![CDATA[The user successfully navigated to the departments page.]]>
     </line>
     <line>
-      <![CDATA[The new employee was created.]]>
+      <![CDATA[The error message was displayed, department not created.]]>
     </line>
     <line>
-      <![CDATA[The employee was not found in the employee table.]]>
+      <![CDATA[The success message was displayed, department was created.]]>
     </line>
     <line>
-      <![CDATA[Direct reports was selected in the drop down menu on the managers page.]]>
+      <![CDATA[The department was listed on the page.]]>
     </line>
     <line>
-      <![CDATA[The employee was found in the managers table.]]>
+      <![CDATA[The user navigated to the 'edit department' page.]]>
+    </line>
+    <line>
+      <![CDATA[The error message was displayed, department not updated.]]>
+    </line>
+    <line>
+      <![CDATA[The success message was displayed, department updated.]]>
+    </line>
+    <line>
+      <![CDATA[The department was updated and listed on the page.]]>
+    </line>
+    <line>
+      <![CDATA[The success message was displayed, department was deleted.]]>
+    </line>
+    <line>
+      <![CDATA[The department was not listed on the page, it was successfully deleted.]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24013" started-at="2017-03-30T19:50:01Z" finished-at="2017-03-30T19:50:25Z">
+  <suite name="Bluesource" duration-ms="36046" started-at="2017-03-31T14:05:06Z" finished-at="2017-03-31T14:05:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24013" started-at="2017-03-30T19:50:01Z" finished-at="2017-03-30T19:50:25Z">
-      <class name="at.bluesourceproject.exercisetwo.Employee">
-        <test-method status="PASS" signature="createEmployee()[pri:0, instance:at.bluesourceproject.exercisetwo.Employee@2a5ca609]" name="createEmployee" duration-ms="15002" started-at="2017-03-30T15:50:01Z" finished-at="2017-03-30T15:50:16Z">
+    <test name="demo" duration-ms="36046" started-at="2017-03-31T14:05:06Z" finished-at="2017-03-31T14:05:42Z">
+      <class name="at.bluesourceproject.exercisetwo.Department">
+        <test-method status="PASS" signature="failAddDepartments()[pri:0, instance:at.bluesourceproject.exercisetwo.Department@68be2bc2]" name="failAddDepartments" duration-ms="20787" started-at="2017-03-31T10:05:06Z" finished-at="2017-03-31T10:05:27Z">
           <reporter-output>
             <line>
-              <![CDATA[The 'add employee' form is displayed.]]>
+              <![CDATA[The user successfully navigated to the departments page.]]>
             </line>
             <line>
-              <![CDATA[The new employee was created.]]>
-            </line>
-            <line>
-              <![CDATA[The employee was not found in the employee table.]]>
+              <![CDATA[The error message was displayed, department not created.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createEmployee -->
-        <test-method status="PASS" signature="employeeReportsToMgr()[pri:0, instance:at.bluesourceproject.exercisetwo.Employee@2a5ca609]" name="employeeReportsToMgr" duration-ms="8979" started-at="2017-03-30T15:50:16Z" depends-on-methods="at.bluesourceproject.exercisetwo.Employee.createEmployee" finished-at="2017-03-30T15:50:25Z">
+        </test-method> <!-- failAddDepartments -->
+        <test-method status="PASS" signature="createDepartment()[pri:0, instance:at.bluesourceproject.exercisetwo.Department@68be2bc2]" name="createDepartment" duration-ms="3424" started-at="2017-03-31T10:05:27Z" depends-on-methods="at.bluesourceproject.exercisetwo.Department.failAddDepartments" finished-at="2017-03-31T10:05:30Z">
           <reporter-output>
             <line>
-              <![CDATA[Direct reports was selected in the drop down menu on the managers page.]]>
+              <![CDATA[The success message was displayed, department was created.]]>
             </line>
             <line>
-              <![CDATA[The employee was found in the managers table.]]>
+              <![CDATA[The department was listed on the page.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- employeeReportsToMgr -->
-      </class> <!-- at.bluesourceproject.exercisetwo.Employee -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- createDepartment -->
+        <test-method status="PASS" signature="failUpdateDept()[pri:0, instance:at.bluesourceproject.exercisetwo.Department@68be2bc2]" name="failUpdateDept" duration-ms="2522" started-at="2017-03-31T10:05:30Z" depends-on-methods="at.bluesourceproject.exercisetwo.Department.createDepartment, at.bluesourceproject.exercisetwo.Department.failAddDepartments" finished-at="2017-03-31T10:05:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The user navigated to the 'edit department' page.]]>
+            </line>
+            <line>
+              <![CDATA[The error message was displayed, department not updated.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- failUpdateDept -->
+        <test-method status="PASS" signature="updateDepartment()[pri:0, instance:at.bluesourceproject.exercisetwo.Department@68be2bc2]" name="updateDepartment" duration-ms="2785" started-at="2017-03-31T10:05:33Z" depends-on-methods="at.bluesourceproject.exercisetwo.Department.createDepartment, at.bluesourceproject.exercisetwo.Department.failAddDepartments, at.bluesourceproject.exercisetwo.Department.failUpdateDept" finished-at="2017-03-31T10:05:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The success message was displayed, department updated.]]>
+            </line>
+            <line>
+              <![CDATA[The department was updated and listed on the page.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateDepartment -->
+        <test-method status="PASS" signature="deleteDepartment()[pri:0, instance:at.bluesourceproject.exercisetwo.Department@68be2bc2]" name="deleteDepartment" duration-ms="6505" started-at="2017-03-31T10:05:35Z" depends-on-methods="at.bluesourceproject.exercisetwo.Department.updateDepartment, at.bluesourceproject.exercisetwo.Department.createDepartment, at.bluesourceproject.exercisetwo.Department.failAddDepartments, at.bluesourceproject.exercisetwo.Department.failUpdateDept" finished-at="2017-03-31T10:05:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The success message was displayed, department was deleted.]]>
+            </line>
+            <line>
+              <![CDATA[The department was not listed on the page, it was successfully deleted.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteDepartment -->
+      </class> <!-- at.bluesourceproject.exercisetwo.Department -->
+    </test> <!-- demo -->
+  </suite> <!-- Bluesource -->
 </testng-results>

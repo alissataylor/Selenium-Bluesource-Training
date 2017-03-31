@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>TestNG:  demo</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>demo</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Mar 31 10:05:06 EDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>36 seconds (36046 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='at.bluesourceproject.exercisetwo.Department.createDepartment()'><b>createDepartment</b><br>Test class: at.bluesourceproject.exercisetwo.Department<br/>
+<a href="#Output-1526970878" onClick='toggleBox("Output-1526970878", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1526970878" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1526970878">
+The success message was displayed, department was created.<br/>
+The department was listed on the page.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>at.bluesourceproject.exercisetwo.Department@68be2bc2</td></tr>
+<tr>
+<td title='at.bluesourceproject.exercisetwo.Department.deleteDepartment()'><b>deleteDepartment</b><br>Test class: at.bluesourceproject.exercisetwo.Department<br/>
+<a href="#Output-1064265473" onClick='toggleBox("Output-1064265473", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1064265473" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1064265473">
+The success message was displayed, department was deleted.<br/>
+The department was not listed on the page, it was successfully deleted.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>at.bluesourceproject.exercisetwo.Department@68be2bc2</td></tr>
+<tr>
+<td title='at.bluesourceproject.exercisetwo.Department.failAddDepartments()'><b>failAddDepartments</b><br>Test class: at.bluesourceproject.exercisetwo.Department<br/>
+<a href="#Output-1328238652" onClick='toggleBox("Output-1328238652", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1328238652" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1328238652">
+The user successfully navigated to the departments page.<br/>
+The error message was displayed, department not created.<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>at.bluesourceproject.exercisetwo.Department@68be2bc2</td></tr>
+<tr>
+<td title='at.bluesourceproject.exercisetwo.Department.failUpdateDept()'><b>failUpdateDept</b><br>Test class: at.bluesourceproject.exercisetwo.Department<br/>
+<a href="#Output-1022081840" onClick='toggleBox("Output-1022081840", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1022081840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1022081840">
+The user navigated to the 'edit department' page.<br/>
+The error message was displayed, department not updated.<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>at.bluesourceproject.exercisetwo.Department@68be2bc2</td></tr>
+<tr>
+<td title='at.bluesourceproject.exercisetwo.Department.updateDepartment()'><b>updateDepartment</b><br>Test class: at.bluesourceproject.exercisetwo.Department<br/>
+<a href="#Output-652433136" onClick='toggleBox("Output-652433136", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-652433136" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-652433136">
+The success message was displayed, department updated.<br/>
+The department was updated and listed on the page.<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>at.bluesourceproject.exercisetwo.Department@68be2bc2</td></tr>
+</table><p>
+</body>
+</html>

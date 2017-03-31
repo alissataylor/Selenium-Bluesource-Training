@@ -31,25 +31,42 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">24.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">demo</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">36.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">at.bluesourceproject.exercisetwo.Employee</td><td><a href="#m1"><b>createEmployee</b>  </a></td><td class="numi">1</td><td>1490903401286</td><td class="numi">15002</td></tr><tr class="passedodd"><td><a href="#m2"><b>employeeReportsToMgr</b>  </a></td><td class="numi">1</td><td>1490903416288</td><td class="numi">8979</td></tr>
+<tr><th colspan="4">demo &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">at.bluesourceproject.exercisetwo.Department</td><td><a href="#m1"><b>failAddDepartments</b>  </a></td><td class="numi">1</td><td>1490969106467</td><td class="numi">20787</td></tr><tr class="passedodd"><td><a href="#m2"><b>createDepartment</b>  </a></td><td class="numi">1</td><td>1490969127256</td><td class="numi">3424</td></tr><tr class="passedodd"><td><a href="#m3"><b>failUpdateDept</b>  </a></td><td class="numi">1</td><td>1490969130682</td><td class="numi">2522</td></tr><tr class="passedodd"><td><a href="#m4"><b>updateDepartment</b>  </a></td><td class="numi">1</td><td>1490969133206</td><td class="numi">2785</td></tr><tr class="passedodd"><td><a href="#m5"><b>deleteDepartment</b>  </a></td><td class="numi">1</td><td>1490969135993</td><td class="numi">6505</td></tr>
 </table>
-<h1>Default test</h1>
-<h2 id="m1">at.bluesourceproject.exercisetwo.Employee:createEmployee</h2>
+<h1>demo</h1>
+<h2 id="m1">at.bluesourceproject.exercisetwo.Department:updateDepartment</h2>
 <div style="padding-left:3em">
-The 'add employee' form is displayed.<br/>
-The new employee was created.<br/>
-The employee was not found in the employee table.<br/>
+The success message was displayed, department updated.<br/>
+The department was updated and listed on the page.<br/>
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">at.bluesourceproject.exercisetwo.Employee:employeeReportsToMgr</h2>
+<h2 id="m2">at.bluesourceproject.exercisetwo.Department:failAddDepartments</h2>
 <div style="padding-left:3em">
-Direct reports was selected in the drop down menu on the managers page.<br/>
-The employee was found in the managers table.<br/>
+The user successfully navigated to the departments page.<br/>
+The error message was displayed, department not created.<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">at.bluesourceproject.exercisetwo.Department:failUpdateDept</h2>
+<div style="padding-left:3em">
+The user navigated to the 'edit department' page.<br/>
+The error message was displayed, department not updated.<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">at.bluesourceproject.exercisetwo.Department:createDepartment</h2>
+<div style="padding-left:3em">
+The success message was displayed, department was created.<br/>
+The department was listed on the page.<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">at.bluesourceproject.exercisetwo.Department:deleteDepartment</h2>
+<div style="padding-left:3em">
+The success message was displayed, department was deleted.<br/>
+The department was not listed on the page, it was successfully deleted.<br/>
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

@@ -150,7 +150,7 @@ public class Title extends BaseClass {
 			title.deleteTitle(empFile.getString("newTitleName"));
 			
 			//accepts the java script pop up to delete the department.
-			javaScriptPopUp();
+			javaScriptPopUp(driver);
 			
 			//verify that the department deleted message appears at the top of the page.
 			Assert.assertTrue(title.deleteTitleSuccessMessage(),

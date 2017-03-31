@@ -148,7 +148,7 @@ public class Department extends BaseClass {
 		departments.deleteDepartment(empFile.getString("newDepartmentName"));
 		
 		//accepts the java script pop up to delete the department.
-		javaScriptPopUp();
+		javaScriptPopUp(driver);
 		
 		//verify that the department deleted message appears at the top of the page.
 		Assert.assertTrue(departments.deleteDepartmentSuccessMessage(),
@@ -160,5 +160,6 @@ public class Department extends BaseClass {
 				"The updated department was listed in the departments list, please investigate.");
 		Reporter.log("The department was not listed on the page, it was successfully deleted.");
 		
+		driver.quit();
 	}
 }
